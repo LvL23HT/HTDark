@@ -28,6 +28,24 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
+    <style>
+      main {
+        margin-left: 19rem;
+        padding: 2rem;
+        background-color: #0f0f0f;
+        color: #c9d1d9;
+      }
+      svg {
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-right: 0.5rem;
+        transition: transform 0.2s ease-in-out, filter 0.3s ease-in-out;
+      }
+      a:hover svg {
+        transform: scale(1.2);
+        filter: drop-shadow(0 0 4px #00fff7);
+      }
+    </style>
   </head>
   <body>
     <nav class="sidebar">
@@ -116,7 +134,7 @@
       <div class="separator separator--top"></div>
     </nav>
 
-    <main style="margin-left: 19rem; padding: 2rem;">
+    <main>
       {{ content }}
     </main>
 
