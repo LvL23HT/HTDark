@@ -1,6 +1,24 @@
-<div style="text-align:center; padding: 4rem 1rem; font-family: 'Share Tech Mono', monospace; background: #0f0f0f; color: #00fff7;">
-  <h1 style="font-size: 3rem; color: #f85149;">System Maintenance</h1>
-  <p style="font-size: 1.2rem;">The HTDark Network is currently undergoing upgrades.</p>
-  <p style="color: #888;">We're reinforcing protocols, optimizing tools, and recalibrating the Grid.</p>
-  <p style="margin-top: 2rem;">We'll be back online shortly. <span style="color:#ff00aa;">Stay sharp, Operative.</span></p>
+<div style="font-family: 'Share Tech Mono', monospace; background: #0f0f0f; color: #00fff7; min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 2rem;">
+  <h1 class="glitch-title">System Maintenance</h1>
+  <p style="font-size: 1.2rem;">The HTDark Grid is upgrading its protocols...</p>
+  <p style="color: #888;">Our operations node is temporarily offline while we recalibrate.</p>
+  <p style="margin-top: 2rem;">We'll be back soon. <span style="color:#ff00aa;">Stay sharp, Operative.</span></p>
+
+  <style>
+    .glitch-title {
+      font-size: 3rem;
+      color: #f85149;
+      text-shadow: 1px 0 red, -1px 0 blue;
+      animation: glitch 1.2s infinite;
+    }
+
+    @keyframes glitch {
+      0% { text-shadow: 1px 0 red, -1px 0 blue; }
+      20% { text-shadow: -2px 2px red, 2px -2px blue; }
+      40% { text-shadow: 2px -1px red, -2px 1px blue; }
+      60% { text-shadow: 1px 1px red, -1px -1px blue; }
+      80% { text-shadow: -1px 0 red, 1px 0 blue; }
+      100% { text-shadow: 1px 0 red, -1px 0 blue; }
+    }
+  </style>
 </div>
