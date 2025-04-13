@@ -91,12 +91,18 @@
   }
 
   .avatar {
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid #00fff7;
-  }
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #00fff7;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.avatar:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px #00fff7;
+}
 
   .avatar_name .user-name {
     font-weight: 600;
@@ -110,6 +116,9 @@
   }
   .avatar_name .email:hover {
     text-decoration: underline;
+  }
+  body.collapsed .sidebar_profile .avatar_name {
+    display: none;
   }
 </style>
   </head>
@@ -202,8 +211,8 @@
     <img class="avatar" src="{{ site.baseurl }}/assets/img/avatar.jpg" alt="User Avatar">
   </div>
   <div class="avatar_name">
-    <span class="user-name">HTDark</span>
-    <a href="https://htdark.com/account" class="email">View Profile</a>
+    <span class="user-name">@dEEpEst_23</span>
+    <a href="https://htdark.com/index.php?members/deepest.1/" class="email">View Profile</a>
   </div>
 </div>
 <div class="separator separator--top"></div>
