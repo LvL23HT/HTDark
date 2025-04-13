@@ -1,4 +1,4 @@
 theme: jekyll-theme-midnight
 baseurl: "/HTDark"
-maintenance_mode: false
+maintenance_mode: true
 
