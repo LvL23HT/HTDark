@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://lvl23ht.github.io/HTDark/sitemap.xml
