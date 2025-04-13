@@ -45,7 +45,32 @@
         transform: scale(1.2);
         filter: drop-shadow(0 0 4px #00fff7);
       }
-    </style>
+      body.collapsed .sidebar .link.hide {
+        display: none;
+      }
+
+      body.collapsed .tooltip__content {
+        visibility: visible;
+        position: absolute;
+        left: 100%;
+        margin-left: 0.5rem;
+        background: #1e1e1e;
+        color: #fff;
+        padding: 0.25rem 0.5rem;
+        border-radius: 0.25rem;
+        white-space: nowrap;
+        font-size: 0.85rem;
+        opacity: 0.9;
+      }
+
+      .tooltip__content {
+        display: none;
+      }
+
+      .tooltip:hover .tooltip__content {
+        display: block;
+      }
+</style>
   </head>
   <body>
     <nav class="sidebar">
@@ -69,7 +94,6 @@
       <a href="{{ site.baseurl }}/" title="Home" class="tooltip">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M4 10v10h5v-6h6v6h5V10"/></svg>
         <span class="link hide">Home</span>
-        <span class="tooltip__content">Home</span>
       </a>
     </li>
     <li>
