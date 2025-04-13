@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="7; url=/HTDark/">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 | HTDark Node Lost</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+    body {
+      background: radial-gradient(ellipse at center, #0f0f0f 0%, #050505 100%);
+      color: #00fff7;
+      font-family: 'Share Tech Mono', monospace;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 5rem;
+      color: #ff0055;
+      margin: 0;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin: 1rem 0;
+    }
+
+    .glitch {
+      font-size: 2rem;
+      color: #00fff7;
+      text-shadow: 1px 0 red, -1px 0 blue;
+      animation: glitch 1s infinite;
+    }
+
+    @keyframes glitch {
+      0% { text-shadow: 1px 0 red, -1px 0 blue; }
+      20% { text-shadow: -1px -1px red, 1px 1px blue; }
+      40% { text-shadow: 1px 1px red, -1px -1px blue; }
+      60% { text-shadow: 0 0 red, 0 0 blue; }
+      80% { text-shadow: 2px 0 red, -2px 0 blue; }
+      100% { text-shadow: 1px 0 red, -1px 0 blue; }
+    }
+
+    a {
+      color: #00fff7;
+      text-decoration: underline;
+    }
+
+    .countdown {
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <h1>404</h1>
+  <p class="glitch">Node not found in HTDark Grid</p>
+  <p>Redirecting to <a href="/HTDark/">HTDark Central Hub</a>...</p>
+  <div class="countdown">You'll be warped in 7 seconds. If not, click the link above.</div>
+</body>
+</html>
