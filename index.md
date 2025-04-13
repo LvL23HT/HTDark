@@ -20,10 +20,11 @@ Welcome to **Hack Tools Dark Community**, your trusted source for advanced cyber
 
 ## Explore Our Resources:
 
-- [Red Team Techniques](https://htdark.com/categories/red-team)
-- [Blue Team Strategies](https://htdark.com/categories/blue-team)
-- [Malware Analysis](https://htdark.com/categories/malware-analysis)
-- [Ethical Hacking Guides](https://htdark.com/categories/ethical-hacking)
+- [Red Team Techniques](https://htdark.com/index.php#red-team-offensive-security.5)
+- [Blue Team Strategies](https://htdark.com/index.php#blue-team-defensive-security.6)
+- [Cracking & Reverse Engineering](https://htdark.com/index.php#cracking-reverse-engineering.17)
+- [Ethical Hacking Courses](https://htdark.com/index.php?resources/)
+- [Much More to Explore](https://htdark.com/index.php)
 
 ---
 
@@ -32,7 +33,8 @@ Welcome to **Hack Tools Dark Community**, your trusted source for advanced cyber
 <ul>
   {% for post in site.posts %}
     <li>
-      <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %d, %Y" }}
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> <br>
+      <small>{{ post.date | date: "%B %d, %Y" }}</small>
     </li>
   {% endfor %}
 </ul>
@@ -43,13 +45,13 @@ Welcome to **Hack Tools Dark Community**, your trusted source for advanced cyber
 
 Become a part of HTDark and gain full access to tools, discussions, and exclusive content.
 
-[**Register Now**](https://htdark.com/register)
+[**Register Now**](https://htdark.com/index.php?register/)
 
 ---
 
 ## Stay Updated
 
-Follow our [GitHub repository](https://github.com/yourusername/yourrepo) and never miss an update.
+Follow our [GitHub repository](https://github.com/LvL23HT) and never miss an update.
 
 ---
 
