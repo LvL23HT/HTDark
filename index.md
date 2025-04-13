@@ -2,6 +2,10 @@
 title: Welcome to Hack Tools Dark Community
 ---
 
+{% if site.maintenance_mode %}
+  {% include maintenance.html %}
+{% else %}
+
 # Hack Tools Dark Community (HTDark.com)
 
 Welcome to **Hack Tools Dark Community**, your trusted source for advanced cybersecurity knowledge, tools, and discussions.
@@ -56,3 +60,5 @@ Follow our [GitHub repository](https://github.com/LvL23HT) and never miss an upd
 ---
 
 **HTDark.CoM** ❤️ *Made with love by cybersecurity enthusiasts.*
+
+{% endif %}
