@@ -70,6 +70,13 @@
       .tooltip:hover .tooltip__content {
         display: block;
       }
+  .expand-btn .icon {
+    display: inline-block;
+    transition: transform 0.3s ease;
+  }
+  body.collapsed .expand-btn .icon {
+    transform: rotate(180deg);
+  }
 </style>
   </head>
   <body>
@@ -81,7 +88,9 @@
             <span class="hide company-name">HTDark</span>
           </a>
         </div>
-        <button class="expand-btn" type="button">☰</button>
+        <button class="expand-btn" type="button" aria-label="Toggle sidebar">
+  <span class="icon">☰</span>
+</button>
       </div>
 
       <div class="search__wrapper">
@@ -101,6 +110,7 @@
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16v2H4zm0 6h16v2H4zm0 6h10v2H4z"/></svg>
         <span class="link hide">Blog</span>
         <span class="tooltip__content">Blog</span>
+<style>.sidebar:not(.collapsed) .tooltip__content { display: none !important; }</style>
       </a>
     </li>
     <li>
