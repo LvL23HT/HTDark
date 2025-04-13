@@ -10,21 +10,60 @@
     <meta name="keywords" content="HTDark, ethical hacking, red team, blue team, cybersecurity, malware, hacking tools">
     <meta name="author" content="HTDark Team">
 
-    <!-- Cyberpunk Styling ) 
-    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
-    <style>
-      body {
-        background-color: #0f0f0f;
-        color: #00fff7;
-        font-family: 'Share Tech Mono', monospace;
-        margin: 0;
-        padding: 2rem;
-      }
-      a { color: #58a6ff; }
-    </style>
-    -->
+    <!-- Open Graph -->
+    <meta property="og:title" content="HTDark - Hack Tools Dark Community" />
+    <meta property="og:description" content="Explore red teaming, ethical hacking, and malware analysis with HTDark." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://lvl23ht.github.io/HTDark/" />
+    <meta property="og:image" content="https://lvl23ht.github.io/HTDark/assets/img/htdark-banner.png" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="HTDark - Hack Tools Dark Community" />
+    <meta name="twitter:description" content="Explore red teaming, ethical hacking, and malware analysis with HTDark." />
+    <meta name="twitter:image" content="https://lvl23ht.github.io/HTDark/assets/img/htdark-banner.png" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/img/favicon.png" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
   </head>
   <body>
-    {{ content }}
+    <nav class="sidebar">
+      <div class="sidebar-top-wrapper">
+        <div class="sidebar-top">
+          <a href="{{ site.baseurl }}/" class="logo_wrapper">
+            <img src="{{ site.baseurl }}/assets/img/logo.svg" alt="Logo" class="logo-small">
+            <span class="hide company-name">HTDark</span>
+          </a>
+        </div>
+        <button class="expand-btn" type="button">☰</button>
+      </div>
+
+      <div class="search__wrapper">
+        <input type="text" placeholder="Search..." aria-labelledby="search-icon" />
+      </div>
+
+      <div class="sidebar-links">
+        <ul>
+          <li>
+            <a href="{{ site.baseurl }}/" title="Dashboard" class="tooltip">
+              <span class="link hide">Dashboard</span>
+              <span class="tooltip__content">Dashboard</span>
+            </a>
+          </li>
+          <!-- More links here -->
+        </ul>
+      </div>
+
+      <div class="separator separator--top"></div>
+    </nav>
+
+    <main style="margin-left: 19rem; padding: 2rem;">
+      {{ content }}
+    </main>
+
+    <script src="{{ site.baseurl }}/assets/js/main.js"></script>
   </body>
 </html>
