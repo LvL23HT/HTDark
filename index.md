@@ -2,6 +2,12 @@
 title: Welcome to Hack Tools Dark Community
 ---
 
+<script>
+  if (!navigator.onLine) {
+    window.location.href = "/HTDark/offline.html";
+  }
+</script>
+
 {% if site.maintenance_mode %}
   {% include maintenance.html %}
 {% else %}
@@ -62,3 +68,4 @@ Follow our [GitHub repository](https://github.com/LvL23HT) and never miss an upd
 **HTDark.CoM** ❤️ *Made with love by cybersecurity enthusiasts.*
 
 {% endif %}
+
