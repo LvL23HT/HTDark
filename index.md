@@ -6,11 +6,17 @@ title: Welcome to Hack Tools Dark Community
 
 Welcome to **Hack Tools Dark Community**, your trusted source for advanced cybersecurity knowledge, tools, and discussions.
 
+> **HTDark is more than a site — it's a movement.**
+
+---
+
 ## What We Offer:
 
-- **Cybersecurity Tutorials:** In-depth guides and tutorials crafted by industry professionals to help you enhance your skills.
-- **Exclusive Tools:** Access specialized tools for penetration testing, ethical hacking, and security assessments.
-- **Active Community:** Engage with fellow cybersecurity enthusiasts, professionals, and ethical hackers.
+- **Cybersecurity Tutorials:** In-depth guides crafted by industry experts.
+- **Exclusive Tools:** Specialized software for ethical hacking and penetration testing.
+- **Active Community:** Connect with fellow security professionals and enthusiasts.
+
+---
 
 ## Explore Our Resources:
 
@@ -19,9 +25,27 @@ Welcome to **Hack Tools Dark Community**, your trusted source for advanced cyber
 - [Malware Analysis](https://htdark.com/categories/malware-analysis)
 - [Ethical Hacking Guides](https://htdark.com/categories/ethical-hacking)
 
+---
+
+## Latest Blog Posts
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %d, %Y" }}
+    </li>
+  {% endfor %}
+</ul>
+
+---
+
 ## Join Our Community
 
-[Register now](https://htdark.com/register) to become a part of the community and gain full access to our exclusive content, discussions, and cybersecurity tools.
+Become a part of HTDark and gain full access to tools, discussions, and exclusive content.
+
+[**Register Now**](https://htdark.com/register)
+
+---
 
 ## Stay Updated
 
@@ -29,7 +53,4 @@ Follow our [GitHub repository](https://github.com/yourusername/yourrepo) and nev
 
 ---
 
-HTDark.CoM ❤️ Made with love by cybersecurity enthusiasts.
-
-
-
+**HTDark.CoM** ❤️ *Made with love by cybersecurity enthusiasts.*
