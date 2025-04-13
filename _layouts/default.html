@@ -77,6 +77,40 @@
   body.collapsed .expand-btn .icon {
     transform: rotate(180deg);
   }
+  .sidebar_profile {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--text-link);
+    padding: 1rem 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .avatar_wrapper {
+    display: flex;
+  }
+
+  .avatar {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #00fff7;
+  }
+
+  .avatar_name .user-name {
+    font-weight: 600;
+    color: #fff;
+  }
+
+  .avatar_name .email {
+    font-size: 0.75rem;
+    color: #58a6ff;
+    text-decoration: none;
+  }
+  .avatar_name .email:hover {
+    text-decoration: underline;
+  }
 </style>
   </head>
   <body>
@@ -93,9 +127,7 @@
 </button>
       </div>
 
-      <div class="search__wrapper">
-        <input type="text" placeholder="Search..." aria-labelledby="search-icon" />
-      </div>
+      
 
       <div class="sidebar-links">
   <ul>
@@ -165,7 +197,16 @@
   </ul>
 </div>
 
-      <div class="separator separator--top"></div>
+      <div class="sidebar_profile">
+  <div class="avatar_wrapper">
+    <img class="avatar" src="{{ site.baseurl }}/assets/img/avatar.jpg" alt="User Avatar">
+  </div>
+  <div class="avatar_name">
+    <span class="user-name">HTDark</span>
+    <a href="https://htdark.com/account" class="email">View Profile</a>
+  </div>
+</div>
+<div class="separator separator--top"></div>
     </nav>
 
     <main>
