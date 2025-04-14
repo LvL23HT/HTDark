@@ -1,5 +1,5 @@
 ---
-title: 🛠️ Resource: Top 24 Tools for Threat Intelligence, OSINT, and Attack Surface Mapping
+title: 🛠️ Resource Top 24 Tools for Threat Intelligence, OSINT, and Attack Surface Mapping
 data: 2025-04-14
 ---
 
