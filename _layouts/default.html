@@ -108,22 +108,44 @@
         text-shadow: 0 0 5px #00fff7, 0 0 10px #00fff7;
       }
 
-      .tooltip {
-        position: relative;
+      /* Sidebar Link Styles */
+      .sidebar-links ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .sidebar-links li {
+        margin: 1rem 0;
+      }
+
+      .sidebar-links a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #c9d1d9;
+        padding: 0.5rem 1rem;
+        transition: background-color 0.3s ease;
+      }
+
+      .sidebar-links a:hover {
+        background-color: #2a2a2a;
+      }
+
+      .sidebar-links svg {
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-right: 0.5rem;
+        transition: transform 0.2s ease-in-out, filter 0.3s ease-in-out;
+      }
+
+      .sidebar-links a:hover svg {
+        transform: scale(1.2);
+        filter: drop-shadow(0 0 4px #00fff7);
       }
 
       .tooltip__content {
         display: none;
-        position: absolute;
-        left: 100%;
-        margin-left: 0.5rem;
-        background: #1e1e1e;
-        color: #fff;
-        padding: 0.25rem 0.5rem;
-        border-radius: 0.25rem;
-        white-space: nowrap;
-        font-size: 0.85rem;
-        opacity: 0.9;
       }
 
       .tooltip:hover .tooltip__content {
@@ -149,6 +171,27 @@
         .expand-btn {
           display: block;
         }
+
+        .sidebar-links svg {
+          width: 1.2rem;
+          height: 1.2rem;
+        }
+
+        .sidebar-links a:hover svg {
+          transform: scale(1.1);
+        }
+      }
+
+      @media (max-width: 480px) {
+        .sidebar-links svg {
+          width: 1rem;
+          height: 1rem;
+          margin-right: 0.25rem;
+        }
+
+        .sidebar-links a:hover svg {
+          transform: scale(1.05);
+        }
       }
     </style>
   </head>
@@ -173,31 +216,20 @@
               <span class="link hide">Home</span>
             </a>
           </li>
-          <!-- Add additional links here -->
-                <div class="sidebar-links">
-  <ul>
-    <li>
-      <a href="{{ site.baseurl }}/" title="Home" class="tooltip">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M4 10v10h5v-6h6v6h5V10"/></svg>
-        <span class="link hide">Home</span>
-      </a>
-    </li>
-    <li>
-      <a href="{{ site.baseurl }}/blog" title="Blog" class="tooltip">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16v2H4zm0 6h16v2H4zm0 6h10v2H4z"/></svg>
-        <span class="link hide">Blog</span>
-        <span class="tooltip__content">Blog</span>
-<style>.sidebar:not(.collapsed) .tooltip__content { display: none !important; }</style>
-      </a>
-    </li>
-    <li>
-      <a href="https://htdark.com/tools" title="Tools" class="tooltip">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14.7 6.3l-1.4 1.4 2.6 2.6-2 2-2.6-2.6-1.4 1.4 2.6 2.6-6 6-2.8-2.8 6-6-2.6-2.6L7.3 9.3l2.6 2.6 2-2-2.6-2.6L10.3 6l2.6 2.6 1.4-1.4z"/></svg>
-        <span class="link hide">Tools</span>
-        <span class="tooltip__content">Tools</span>
-      </a>
-    </li>
-    <li>
+          <li>
+            <a href="{{ site.baseurl }}/blog" title="Blog" class="tooltip">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16v2H4zm0 6h16v2H4zm0 6h10v2H4z"/></svg>
+              <span class="link hide">Blog</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://htdark.com/tools" title="Tools" class="tooltip">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14.7 6.3l-1.4 1.4 2.6 2.6-2 2-2.6-2.6-1.4 1.4 2.6 2.6-6 6-2.8-2.8 6-6-2.6-2.6L7.3 9.3l2.6 2.6 2-2-2.6-2.6L10.3 6l2.6 2.6 1.4-1.4z"/></svg>
+              <span class="link hide">Tools</span>
+            </a>
+          </li>
+          <!-- Add other links as needed -->
+              <li>
       <a href="https://htdark.com/forum" title="Forum" class="tooltip">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H3a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h4l3 3 3-3h8z"/></svg>
         <span class="link hide">Forum</span>
@@ -239,8 +271,6 @@
         <span class="tooltip__content">Donate</span>
       </a>
     </li>
-  </ul>
-</div>
         </ul>
       </div>
       <div class="sidebar_profile">
