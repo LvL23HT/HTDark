@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Blog
-permalink: /blog/
+permalink: /HTDark/blog/
 ---
 
 # 📝 HTDark Blog
