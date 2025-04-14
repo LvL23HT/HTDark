@@ -13,7 +13,7 @@ Welcome to our blog section — explore the latest updates, tutorials, and cyber
 <ul>
   {% for post in site.posts %}
     <li>
-      <a href="{{ post.url }}">{{ post.title }}</a><br>
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> <br>
       <small>{{ post.date | date: "%B %d, %Y" }}</small>
     </li>
   {% endfor %}
