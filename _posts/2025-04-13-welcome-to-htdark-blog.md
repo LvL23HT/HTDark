@@ -19,10 +19,7 @@ Join the discussion and interact with our community by visiting [HTDark.com](htt
 
 Happy hacking!
 
+[⬅ Back to Home]({{ site.baseurl }}/)
 ---
 
 HTDark.CoM ❤️ Made with love by cybersecurity enthusiasts.
-
----
-
-[⬅ Back to Home]({{ site.baseurl }}/)
