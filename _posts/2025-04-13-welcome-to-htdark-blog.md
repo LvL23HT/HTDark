@@ -22,3 +22,7 @@ Happy hacking!
 ---
 
 HTDark.CoM ❤️ Made with love by cybersecurity enthusiasts.
+
+---
+
+[⬅ Back to Home]({{ site.baseurl }}/)
