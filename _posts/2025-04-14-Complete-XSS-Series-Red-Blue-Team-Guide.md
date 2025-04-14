@@ -160,3 +160,5 @@ Content-Security-Policy: default-src 'self'; script-src 'self'; object-src 'none
 ## 🎯 Conclusion
 
 Modern XSS defense and offense require creativity and precision. Whether you're building secure systems or breaking them as a Red Teamer — mastering the full landscape of XSS is essential.
+
+[⬅ Back to Home]({{ site.baseurl }}/)
