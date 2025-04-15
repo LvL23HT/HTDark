@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Welcome to Hack Tools Dark Community
 ---
 
