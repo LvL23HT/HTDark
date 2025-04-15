@@ -13,7 +13,9 @@ Welcome to our blog section — explore the latest updates, tutorials, and cyber
   {% for post in site.posts %}
     <li>
       <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> <br>
-      <small>{{ post.date | date: "%B %d, %Y" }}</small>
+      <small>
+        {{ post.date | date: "%B %d, %Y" }} • {{ post.reading_time }} min read
+      </small>
     </li>
   {% endfor %}
 </ul>
