@@ -1,0 +1,182 @@
+<!DOCTYPE html><html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ page.title }}</title><!-- SEO Meta Tags -->
+<meta name="description" content="HTDark - Hack Tools Dark Community. A hub for ethical hacking, red teaming, malware analysis and cybersecurity tools.">
+<meta name="keywords" content="HTDark, ethical hacking, red team, blue team, cybersecurity, malware, hacking tools">
+<meta name="author" content="HTDark Team">
+
+<!-- Open Graph -->
+<meta property="og:title" content="HTDark - Hack Tools Dark Community" />
+<meta property="og:description" content="Explore red teaming, ethical hacking, and malware analysis with HTDark." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://lvl23ht.github.io/HTDark/" />
+<meta property="og:image" content="https://lvl23ht.github.io/HTDark/assets/img/htdark-banner.webp" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="HTDark - Hack Tools Dark Community" />
+<meta name="twitter:description" content="Explore red teaming, ethical hacking, and malware analysis with HTDark." />
+<meta name="twitter:image" content="https://lvl23ht.github.io/HTDark/assets/img/htdark-banner.webp" />
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/img/favicon.png" />
+
+<!-- Styles -->
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
+<style>
+  main {
+    margin-left: 19rem;
+    padding: 2rem;
+    background-color: #0f0f0f;
+    color: #c9d1d9;
+  }
+  svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.5rem;
+    transition: transform 0.2s ease-in-out, filter 0.3s ease-in-out;
+  }
+  a:hover svg {
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 4px #00fff7);
+  }
+  body.collapsed .sidebar .link.hide {
+    display: none;
+  }
+
+  body.collapsed .tooltip__content {
+    visibility: visible;
+    position: absolute;
+    left: 100%;
+    margin-left: 0.5rem;
+    background: #1e1e1e;
+    color: #fff;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    white-space: nowrap;
+    font-size: 0.85rem;
+    opacity: 0.9;
+  }
+
+  .tooltip__content {
+    display: none;
+  }
+
+  .tooltip:hover .tooltip__content {
+    display: block;
+  }
+
+.expand-btn .icon { display: inline-block; transition: transform 0.3s ease; } body.collapsed .expand-btn .icon { transform: rotate(180deg); } .sidebar_profile { display: flex; align-items: center; gap: 0.75rem; color: var(--text-link); padding: 1rem 0.5rem; font-size: 0.9rem; }
+
+.avatar_wrapper { display: flex; }
+
+.avatar { width: 2.5rem; height: 2.5rem; border-radius: 50%; object-fit: cover; border: 2px solid #00fff7; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+
+.avatar:hover { transform: scale(1.1); box-shadow: 0 0 10px #00fff7; }
+
+.avatar_name .user-name { font-weight: 600; color: #fff; }
+
+.avatar_name .email { font-size: 0.75rem; color: #58a6ff; text-decoration: none; } .avatar_name .email:hover { text-decoration: underline; } body.collapsed .sidebar_profile .avatar_name { display: none; } </style>
+
+  </head>
+  <body>
+    <nav class="sidebar">
+      <div class="sidebar-top-wrapper">
+        <div class="sidebar-top">
+          <a href="{{ site.baseurl }}/" class="logo_wrapper">
+            <img src="{{ site.baseurl }}/assets/img/logo.png" alt="Logo" class="logo-small">
+            <span class="hide company-name">HTDark</span>
+          </a>
+        </div>
+        <button class="expand-btn" type="button" aria-label="Toggle sidebar">
+  <span class="icon">☰</span>
+</button>
+      </div><div class="sidebar-links">
+
+  <ul>
+    <li>
+      <a href="{{ site.baseurl }}/" title="Home" class="tooltip">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M4 10v10h5v-6h6v6h5V10"/></svg>
+        <span class="link hide">Home</span>
+      </a>
+    </li>
+    <li>
+      <a href="{{ site.baseurl }}/blog" title="Blog" class="tooltip">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16v2H4zm0 6h16v2H4zm0 6h10v2H4z"/></svg>
+        <span class="link hide">Blog</span>
+        <span class="tooltip__content">Blog</span>
+<style>.sidebar:not(.collapsed) .tooltip__content { display: none !important; }</style>
+      </a>
+    </li>
+    <li>
+      <a href="https://htdark.com/tools" title="Tools" class="tooltip">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14.7 6.3l-1.4 1.4 2.6 2.6-2 2-2.6-2.6-1.4 1.4 2.6 2.6-6 6-2.8-2.8 6-6-2.6-2.6L7.3 9.3l2.6 2.6 2-2-2.6-2.6L10.3 6l2.6 2.6 1.4-1.4z"/></svg>
+        <span class="link hide">Tools</span>
+        <span class="tooltip__content">Tools</span>
+      </a>
+    </li>
+    <li>
+      <a href="https://htdark.com/forum" title="Forum" class="tooltip">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H3a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h4l3 3 3-3h8z"/></svg>
+        <span class="link hide">Forum</span>
+        <span class="tooltip__content">Forum</span>
+      </a>
+    </li>
+    <li>
+      <a href="https://htdark.com/lessons" title="Lessons" class="tooltip">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16v16H4zM8 4v16M16 4v16"/></svg>
+        <span class="link hide">Lessons</span>
+        <span class="tooltip__content">Lessons</span>
+      </a>
+    </li>
+    <li>
+      <a href="https://htdark.com/resources" title="Resources" class="tooltip">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/></svg>
+        <span class="link hide">Resources</span>
+        <span class="tooltip__content">Resources</span>
+      </a>
+    </li>
+    <li>
+      <a href="https://htdark.com/account/upgrades" title="Upgrades" class="tooltip">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2l4 4h-3v6h-2V6H8zM6 12h12v8H6z"/></svg>
+        <span class="link hide">Upgrades</span>
+        <span class="tooltip__content">Upgrades</span>
+      </a>
+    </li>
+    <li>
+      <a href="http://ky6urnzorg43zp5sw2gb46csndhpzn6ttpectmeooalwn2zc5w44rbqd.onion" title="Hidden Service" class="tooltip">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 17v-7l5 3.5-5 3.5z"/></svg>
+        <span class="link hide">Hidden</span>
+        <span class="tooltip__content">Hidden Service</span>
+      </a>
+    </li>
+    <li>
+      <a href="https://htdark.com/donate" title="Donate" class="tooltip">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 21C12 21 7 16 7 11.5C7 8.42 9.42 6 12 6s5 2.42 5 5.5C17 16 12 21 12 21z"/></svg>
+        <span class="link hide">Donate</span>
+        <span class="tooltip__content">Donate</span>
+      </a>
+    </li>
+  </ul>
+</div><div class="sidebar_profile">
+
+  <div class="avatar_wrapper">
+    <img class="avatar" src="{{ site.baseurl }}/assets/img/avatar.jpg" alt="User Avatar">
+  </div>
+  <div class="avatar_name">
+    <a href="https://htdark.com/index.php?members/deepest.1/" class="user-name">@dEEpEst_23</a>
+  </div>
+</div>
+<div class="separator separator--top"></div>
+    </nav><main>
+  {{ content }}
+</main>
+
+<script src="{{ site.baseurl }}/assets/js/main.js">document.querySelector(".expand-btn").addEventListener("click", () => {
+
+document.body.classList.toggle("collapsed"); }); </script>
+
+  </body>
+</html>
