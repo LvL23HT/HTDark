@@ -3,4 +3,5 @@ baseurl: "/HTDark"
 maintenance_mode: false
 plugins:
   - jekyll-sitemap
+  - jekyll-reading-time
 
